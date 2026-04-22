@@ -102,12 +102,6 @@ img {
   gap: 2rem;
 }
 
-.hero-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
 .eyebrow,
 .section-eyebrow,
 .trust-label,
@@ -173,7 +167,7 @@ h2,
 }
 
 .role-row {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 1rem;
   color: var(--gold-soft);
@@ -691,6 +685,7 @@ h2 {
   }
 
   .role-row {
+    display: inline-flex;
     width: 100%;
     justify-content: center;
     gap: 1.1rem;
