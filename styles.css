@@ -185,10 +185,10 @@ h2,
 
 h1 {
   margin: 1.9rem 0 0;
-  max-width: 9.2ch;
-  font-size: clamp(3.45rem, 5.65vw, 6rem);
-  line-height: 0.93;
-  letter-spacing: -0.065em;
+  max-width: 8.8ch;
+  font-size: clamp(3.2rem, 5.2vw, 5.5rem);
+  line-height: 1.01;
+  letter-spacing: -0.05em;
   font-weight: 500;
 }
 
@@ -526,21 +526,26 @@ h2 {
   .section-pair {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     gap: 3.5rem;
+    align-items: center;
+  }
+
+  .section-heading {
+    justify-content: center;
   }
 
   h2 {
     margin-top: 0;
     max-width: 13ch;
     font-size: clamp(2.6rem, 4.1vw, 4.15rem);
-    line-height: 0.96;
-    letter-spacing: -0.05em;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
   }
 
   .section-heading-contact h2 {
     max-width: 10.5ch;
     font-size: clamp(2.55rem, 3.8vw, 3.85rem);
-    line-height: 0.98;
-    letter-spacing: -0.048em;
+    line-height: 1.04;
+    letter-spacing: -0.038em;
   }
 
   .section-text {
