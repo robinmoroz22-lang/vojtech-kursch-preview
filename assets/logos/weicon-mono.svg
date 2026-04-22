@@ -1,0 +1,18 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#E6D8C4" stroke-width="3">
+    <rect x="14" y="20" width="54" height="42"/>
+    <rect x="68" y="20" width="54" height="42"/>
+    <rect x="122" y="20" width="54" height="42"/>
+    <rect x="176" y="20" width="54" height="42"/>
+    <rect x="230" y="20" width="54" height="42"/>
+    <rect x="284" y="20" width="54" height="42"/>
+  </g>
+  <g fill="#E6D8C4" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">
+    <text x="24" y="48">W</text>
+    <text x="84" y="48">E</text>
+    <text x="142" y="48">I</text>
+    <text x="188" y="48">C</text>
+    <text x="241" y="48">O</text>
+    <text x="295" y="48">N</text>
+  </g>
+</svg>
