@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mgr. Vojtěch Kursch</title>
+    <title>Mgr. Vojtěch Kursch | Advokát</title>
     <meta
       name="description"
-      content="Osobní profil Mgr. Vojtěcha Kursche, advokáta kanceláře Rada & Partner."
+      content="Advokát pro startupy a digitální firmy. Smlouvy, data a AI tak, aby váš byznys mohl růst bez právních brzd."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="page">
+    <main id="top" class="page">
       <section class="hero">
         <img
           class="hero-image"
@@ -26,10 +26,46 @@
         />
         <div class="hero-scrim"></div>
         <div class="hero-vignette"></div>
-        <div class="hero-menu" aria-hidden="true">
+
+        <button
+          class="hero-menu-button"
+          type="button"
+          aria-label="Otevřít menu"
+          aria-expanded="false"
+          data-menu-button
+        >
           <span></span>
           <span></span>
           <span></span>
+        </button>
+
+        <div class="mobile-menu" hidden data-menu-panel>
+          <nav class="mobile-menu-nav">
+            <div class="mobile-menu-links">
+              <a href="#top" data-menu-link>Úvod</a>
+              <a href="#profil" data-menu-link>Profil</a>
+              <a href="#sluzby" data-menu-link>S čím pomáhám</a>
+              <a href="#pristup" data-menu-link>Přístup</a>
+              <a href="#spoluprace" data-menu-link>Spolupráce</a>
+              <a href="#pro-koho" data-menu-link>Pro koho</a>
+              <a href="#kontakt" data-menu-link>Kontakt</a>
+            </div>
+
+            <div class="mobile-menu-actions">
+              <a class="primary-action" href="mailto:v.kursch@radapartner.cz">
+                <span>Domluvit konzultaci</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a
+                class="mobile-menu-profile"
+                href="https://radapartner.cz/vojtech-kursch/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Oficiální profil
+              </a>
+            </div>
+          </nav>
         </div>
 
         <div class="hero-inner">
@@ -58,33 +94,32 @@
             <p class="role-row">
               <span class="role-line"></span>
               <span>Advokát</span>
-              <span class="role-line role-line-right"></span>
+              <span class="role-line"></span>
             </p>
 
-            <h1>
-              <span class="headline-line">Právo,</span>
-              <span class="headline-line">které drží směr.</span>
-            </h1>
-
-            <div class="identity">
+            <div class="desktop-identity">
               <p class="identity-name">Mgr. Vojtěch Kursch</p>
               <p class="identity-role">advokát</p>
-              <p class="identity-firm">člen týmu Rada &amp; Partner</p>
             </div>
 
+            <h1>Právo pro startupy a digitální firmy</h1>
+
+            <p class="hero-subheadline">
+              Smlouvy, data a AI tak, aby váš byznys mohl růst bez právních brzd.
+            </p>
+
             <p class="hero-body">
-              Klientům pomáhám rozhodovat s jistotou. Hledám podstatu problému
-              a přináším řešení, která obstojí v praxi i v čase.
+              Zaměřuji se na právní podporu technologických projektů, SaaS firem a startupů.
+              Pomáhám klientům nastavovat smlouvy, práci s daty a právní rámec moderního
+              podnikání tak, aby dával smysl nejen právně, ale i obchodně.
             </p>
 
             <div class="hero-actions">
               <a class="primary-action" href="mailto:v.kursch@radapartner.cz">
-                <span>Napsat Vojtěchovi</span>
+                <span>Domluvit konzultaci</span>
                 <span aria-hidden="true">→</span>
               </a>
-              <a class="secondary-action" href="tel:+420774401656">
-                +420 774 401 656
-              </a>
+              <a class="secondary-action" href="tel:+420774401656">+420 774 401 656</a>
               <a
                 class="mobile-profile-link"
                 href="https://radapartner.cz/vojtech-kursch/"
@@ -95,6 +130,20 @@
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="mini-bio">
+        <div class="mini-bio-shell">
+          <div class="mini-bio-meta">
+            <p>Advokát</p>
+            <p>Člen týmu Rada &amp; Partner</p>
+          </div>
+          <p class="mini-bio-copy">
+            Jsem právník zaměřený na digitální podnikání, IT smlouvy a ochranu dat.
+            Absolvoval jsem Právnickou fakultu Univerzity Karlovy v Praze a ve své praxi
+            se věnuji zejména právní podpoře startupů a technologických firem.
+          </p>
         </div>
       </section>
 
@@ -131,34 +180,102 @@
         </div>
       </section>
 
-      <section class="details">
-        <article class="detail">
-          <p class="detail-label">Profil</p>
-          <h2>Klidná právní práce bez okázalosti.</h2>
-          <p>
-            Vojtěch ukončil studium na Právnické fakultě Univerzity Karlovy v
-            Praze v roce 2022. V kanceláři Rada &amp; Partner působí od března
-            2025.
+      <section id="profil" class="section section-light">
+        <div class="section-shell section-pair">
+          <div>
+            <p class="section-eyebrow">Profil</p>
+            <h2>Právo, které dává smysl pro váš byznys</h2>
+          </div>
+          <p class="section-text">
+            Právní řešení mají hodnotu jen tehdy, když fungují v praxi. Pomáhám klientům
+            nastavovat právní rámec jejich podnikání tak, aby podporoval růst firmy,
+            minimalizoval rizika a zůstával srozumitelný.
           </p>
-        </article>
+        </div>
+      </section>
 
-        <article class="detail">
-          <p class="detail-label">Přístup</p>
-          <h2>Přesnost, kontext, výsledek.</h2>
-          <p>
-            Právní otázky mají smysl jen tehdy, když obstojí i obchodně.
-            Důležité je rozumět souvislostem, vyhodnotit rizika a udržet věci
-            srozumitelné.
-          </p>
-        </article>
+      <section id="sluzby" class="section section-soft">
+        <div class="section-shell">
+          <p class="section-eyebrow">S čím pomáhám</p>
+          <h2 class="section-title">S čím pomáhám</h2>
 
-        <article class="detail detail-contact">
-          <p class="detail-label">Kontakt</p>
-          <h2>Pro další rozhovor přímo.</h2>
-          <p>
-            Angličtina plynně, základy němčiny. Pro pracovní kontakt nebo
-            představení věci je k dispozici přímé spojení níže.
+          <div class="services-grid">
+            <article class="service-item">
+              <h3>IT a smluvní agenda</h3>
+              <p>SaaS smlouvy, licenční podmínky, vývoj software, obchodní podmínky a dodavatelské vztahy.</p>
+            </article>
+            <article class="service-item">
+              <h3>Ochrana dat (GDPR)</h3>
+              <p>Nastavení procesů, dokumentace, práce s osobními údaji, cookies a compliance.</p>
+            </article>
+            <article class="service-item">
+              <h3>AI a nové technologie</h3>
+              <p>Základní právní rámec využití AI, smluvní ošetření nástrojů a práce s daty.</p>
+            </article>
+            <article class="service-item">
+              <h3>Startup &amp; růst firmy</h3>
+              <p>Zakladatelské vztahy, investice, nastavení struktury a průběžná právní podpora.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pristup" class="section section-light">
+        <div class="section-shell section-pair">
+          <div>
+            <p class="section-eyebrow">Přístup</p>
+            <h2>Přesnost, kontext, výsledek</h2>
+          </div>
+          <p class="section-text">
+            Právní otázky mají smysl jen tehdy, když obstojí i obchodně. Důležité je
+            rozumět souvislostem, vyhodnotit rizika a nastavit řešení tak, aby byla
+            použitelná v praxi.
           </p>
+        </div>
+      </section>
+
+      <section id="spoluprace" class="section section-dark">
+        <div class="section-shell section-pair">
+          <div>
+            <p class="section-eyebrow">Dlouhodobá spolupráce</p>
+            <h2>Dlouhodobá spolupráce</h2>
+          </div>
+          <div class="section-stack">
+            <p class="section-text dark-text">
+              S klienty spolupracuji zejména dlouhodobě formou pravidelné právní podpory.
+              Tento model umožňuje řešit právní otázky průběžně, efektivně a bez zbytečné administrativy.
+            </p>
+            <p class="section-text dark-text">
+              Rozsah spolupráce se vždy nastavuje podle potřeb konkrétní firmy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pro-koho" class="section section-light">
+        <div class="section-shell section-pair">
+          <div>
+            <p class="section-eyebrow">Pro koho</p>
+            <h2>Pro koho pracuji</h2>
+          </div>
+          <div class="audience-list">
+            <div>Startupy, SaaS firmy a digitální projekty</div>
+            <div>Freelance vývojáře a technologické podnikatele</div>
+            <div>Rostoucí firmy, které potřebují stabilní právní základ</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section section-soft">
+        <div class="section-shell section-pair">
+          <div>
+            <p class="section-eyebrow">Kontakt</p>
+            <h2>Pro další krok přímo</h2>
+            <p class="section-text">
+              Potřebujete nastavit smlouvy, data nebo právní rámec pro váš projekt?
+              Ozvěte se mi a podíváme se na to prakticky.
+            </p>
+          </div>
 
           <div class="contact-list">
             <a href="mailto:v.kursch@radapartner.cz">
@@ -169,13 +286,42 @@
               <span>Telefon</span>
               <strong>+420 774 401 656</strong>
             </a>
-            <a href="https://radapartner.cz/vojtech-kursch/" target="_blank" rel="noreferrer">
-              <span>Oficiální profil</span>
-              <strong>radapartner.cz/vojtech-kursch</strong>
-            </a>
           </div>
-        </article>
+        </div>
       </section>
     </main>
+
+    <script>
+      const menuButton = document.querySelector("[data-menu-button]");
+      const menuPanel = document.querySelector("[data-menu-panel]");
+      const menuLinks = document.querySelectorAll("[data-menu-link]");
+
+      if (menuButton && menuPanel) {
+        const closeMenu = () => {
+          menuButton.setAttribute("aria-expanded", "false");
+          menuPanel.hidden = true;
+          document.body.style.overflow = "";
+        };
+
+        const openMenu = () => {
+          menuButton.setAttribute("aria-expanded", "true");
+          menuPanel.hidden = false;
+          document.body.style.overflow = "hidden";
+        };
+
+        menuButton.addEventListener("click", () => {
+          const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+          if (isExpanded) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
+        });
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+      }
+    </script>
   </body>
 </html>
